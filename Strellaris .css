@@ -1,0 +1,116 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #0f0f0f;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Cabeçalho */
+header {
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    animation: fadeInHeader 3s ease-in-out;
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    animation: slideUp 1.5s ease-in-out;
+}
+
+header p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    opacity: 0.8;
+    font-weight: 300;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Navegação */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: background 0.3s ease;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2rem;
+    display: inline-block;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #5904a1;
+    color: #ffcc00;
+}
+
+/* Seções */
+section {
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 5;
+}
+
+section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: #ff003c;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+section p {
+    font-size: 1.2rem;
+    color: #bbb;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff003c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #5904a1;
+    transform: scale(1.1);
+}
+
+/* Efeito Parallax */
+.parallax {
+    background: url('https://
