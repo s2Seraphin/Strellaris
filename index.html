@@ -288,9 +288,45 @@
     </p>
 </section>
 
+<section id="conectar">
+    <h2>Como Conectar</h2>
+    <p>
+        Junte-se à nossa comunidade no Discord e entre em Strellaris para descobrir os mistérios desse mundo fascinante!
+    </p>
+    <a href="https://discord.gg/rGzRA6jt" class="btn">Conecte-se no Discord</a>
+</section>
+
 <footer>
-    <p>&copy; 2025 Strellaris SMP - Todos os direitos reservados.</p>
+    <p>&copy; 2025 Strellaris SMP. Todos os direitos reservados.</p>
+    <p><a href="https://discord.gg/rGzRA6jt">Entre no servidor agora!</a></p>
 </footer>
+
+<script>
+    // Efeito de rolagem suave
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // Efeito de mudança de cor no navbar ao rolar
+    window.addEventListener('scroll', () => {
+        const nav = document.querySelector('nav');
+        if (window.scrollY > 50) {
+            nav.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
+        } else {
+            nav.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+        }
+    });
+
+    // Notificação ao clicar no botão
+    document.querySelector('.btn').addEventListener('click', () => {
+        alert('Obrigado por se juntar a Strellaris! Em breve você receberá mais informações.');
+    });
+</script>
 
 </body>
 </html>
